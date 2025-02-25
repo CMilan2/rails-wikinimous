@@ -1,0 +1,13 @@
+<h1>Edit <%= @article.title %></h1>
+
+<%= form_with model: @article do |f| %>
+  <%= f.label :title%>
+  <br>
+  <%= f.text_field :title, class:"form-control" %>
+  <br>
+  <%= f.label :content %>
+  <br>
+  <%= f.text_field :content, class:"form-control" %>
+  <br>
+  <%= f.submit class:"btn btn-primary" %>
+<% end %>
